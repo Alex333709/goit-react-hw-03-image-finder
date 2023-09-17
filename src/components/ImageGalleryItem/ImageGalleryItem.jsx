@@ -5,18 +5,16 @@ import {
 } from './ImageGalleryItem.styled';
 
 export default class ImageGalleryItem extends Component {
-  state = {
-    largeImageURL: this.props.largeImageURL,
-    tags: this.props.tags,
+  handleImgClick = () => {
+    const { largeImageURL, tags, onClick } = this.props;
+    onClick({ largeImageURL, tags });
   };
-  hendleImgClick = () => {
-    this.props.onClick(this.state);
-  };
+
   render() {
     const { webformatURL, tags } = this.props;
 
     return (
-      <ImageGalleryItemContainer onClick={this.hendleImgClick}>
+      <ImageGalleryItemContainer onClick={this.handleImgClick}>
         <ImageGalleryItemImage src={webformatURL} alt={tags} />
       </ImageGalleryItemContainer>
     );

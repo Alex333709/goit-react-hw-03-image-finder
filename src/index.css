@@ -20,10 +20,6 @@ img {
   transition: transform 400ms ease-out;
 }
 
-img:hover {
-  transform: scale(1.15);
-}
-
 ul {
   list-style: none;
 }

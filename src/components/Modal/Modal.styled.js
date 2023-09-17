@@ -13,7 +13,7 @@ export const Overlay = styled('div')(() => ({
   zIndex: '1200',
 }));
 
-export const ModalStyled = styled('div')(() => ({
-  maxWidth: 'calc(100vw - 48px)',
-  maxHeight: 'calc(100vh - 24px)',
-}));
+export const ModalStyled = styled('div')({
+  boxSizing: 'border-box',
+  maxWidth: 'calc(60vw)',
+});
