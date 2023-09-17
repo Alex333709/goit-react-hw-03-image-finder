@@ -24,6 +24,7 @@ export default class Modal extends Component {
       this.props.handleCloseModal();
     }
   };
+
   render() {
     const { largeImageURL, tags } = this.props;
     return createPortal(
