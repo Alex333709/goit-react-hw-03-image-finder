@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Searchbar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
-import { getPhotosService } from '../Service/Service';
+import { getPhotosService } from '../service/service';
 import Loader from './Loader/Loader';
 import { AppContainer } from '../components/App.styled';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
